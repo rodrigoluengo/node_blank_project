@@ -1,0 +1,27 @@
+{
+  "app": {
+    "key": "1cde0065dc410aa61540033ab6241d49"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "databases": {
+    "mongodb": {
+      "connection": "mongodb://localhost/marketplace",
+      "options": {
+        "server": {
+          "socketOptions": {
+            "keepAlive": 1
+          }
+        }
+      }
+    }
+  },
+  "storage": {
+    "provider": "rackspace",
+    "username": "ropelue",
+    "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "region": "ORD"
+  }
+}

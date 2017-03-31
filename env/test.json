@@ -1,0 +1,34 @@
+{
+  "app": {
+    "key": "1cde0065dc410aa61540033ab6241d49"
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "databases": {
+    "mongodb": {
+      "connection": "mongodb://localhost/marketplace_test",
+      "options": {
+        "server": {
+          "socketOptions": {
+            "keepAlive": 1
+          }
+        }
+      }
+    }
+  },
+  "user": {
+    "name": "Rodrigo Pereira Luengo",
+    "email": "rpl@outlook.com",
+    "password": "KrirhO52$$",
+    "profile": "ADM",
+    "status": "ACT"
+  },
+  "storage": {
+    "provider": "rackspace",
+    "username": "ropelue",
+    "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "region": "ORD"
+  }
+}

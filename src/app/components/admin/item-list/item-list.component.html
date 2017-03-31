@@ -1,0 +1,69 @@
+<div class="container-fluid">
+
+    <div class="panel panel-default">
+
+        <!-- Toolbar -->
+        <div class="panel-heading">
+
+            <div class="row">
+
+                <!-- Buttons -->
+                <div class="col-xs-12 col-sm-4">
+
+                    <div class="btn-group">
+
+                        <button class="btn btn-default" type="button" (click)="newOrEdit()">
+                            <i class="fa fa-plus"></i>
+                            New
+                        </button>
+
+                        <button class="btn btn-default" type="button" disabled="{{!selecteds.length}}">
+                            <i class="fa fa-pencil"></i>
+                            Edit
+                        </button>
+
+                        <button class="btn btn-default" type="button" disabled="{{!selecteds.length}}">
+                            <i class="fa fa-trash"></i>
+                            Remove
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Search -->
+                <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+
+                    <div class="input-group">
+
+                        <input type="search" name="search" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="panel-body">
+
+            <!-- Not Found Items -->
+            <p class="bg-info nothing-found" *ngIf="!items.length">
+                <i class="fa fa-info-circle"></i>
+                Items not found
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<item-form #form></item-form>
