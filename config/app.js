@@ -1,5 +1,5 @@
-let express         = require('express');
-let morgan          = require('morgan');
+const express       = require('express');
+const morgan        = require('morgan');
 let bodyParser      = require('body-parser');
 var methodOverride  = require('method-override');
 let HttpStatus      = require('http-status-codes');
